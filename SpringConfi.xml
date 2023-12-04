@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   
+   <bean id="emp" class="Employee">
+    <property name="StudentList">
+    <list>
+    	<value>Chinmay</value>
+    	<value>Piyush</value>
+    	<value>Pushkar</value>
+    	<value>Abhishek</value>
+    </list>
+   </property> 
+   
+   
+     <property name="gender">
+   	<set>
+   		<value>Male</value>
+   		<value>Female</value>
+   	
+   	</set>
+  </property>
+  
+  <property name="city">
+     <map>
+     	<entry key="Chinmay" value="Jalna"></entry>
+     	<entry key="Piyush" value="Nanded"></entry>
+     	<entry key="Pushkar" value="Pune"></entry>
+     	<entry key="Abhishek"	value="Aurangabad"></entry>
+     </map>
+    
+    
+    
+    
+    </property>
+  
+  
+   
+   
+   
+   
+  </bean> 
+  </beans>
